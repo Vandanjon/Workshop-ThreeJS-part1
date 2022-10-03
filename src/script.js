@@ -1,0 +1,1 @@
+console.log("script.js linked to index.html");
