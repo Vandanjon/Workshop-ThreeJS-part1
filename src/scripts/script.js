@@ -27,9 +27,14 @@ light.position.set(1, 2, 3);
 scene.add(light);
 scene.add(new THREE.AmbientLight(0xafafaf, 0.15));
 
+
+sphere.rotation.z += 0.4; //rotate Earth once
+
 // Function Animate
 function animate() {
     requestAnimationFrame(animate);
+    sphere.rotation.y -= 0.005; // rotate Earth constantly
     renderer.render(scene, camera);
 };
+
 animate();
