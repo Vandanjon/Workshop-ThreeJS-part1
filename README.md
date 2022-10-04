@@ -74,7 +74,7 @@ animate();
 
 ### 7. Make it real (rotation)
 
-- minus the z `sphere` rotation to 0.4 once.
+- increment the z `sphere` rotation to 0.4 once.
 - make the `sphere` rotate on the y axis constantly.
 
 ## To go further
