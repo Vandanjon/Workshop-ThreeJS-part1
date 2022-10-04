@@ -67,15 +67,21 @@ animate();
 
 ### 6. Create Lights
 
-6. Make it real (rotation)
+- create a PointLight with a white color and a 1.5 intensity level and assign it to a `light` variable.
+- set its position to (1, 2, 3).
+- add it to the `scene`.
+- then, you can add an AmbientLight to the `scene` with an `0xafafaf` color and an intensity of 0.15.
+
+### 7. Make it real (rotation)
+
+- minus the z `sphere` rotation to 0.4 once.
+- make the `sphere` rotate on the y axis constantly.
 
 ## To go further
 
-7. Add Sun
+8. Add Sun
 
-8. Add other planets
+9. Add other planets
 
-9. Make it real (rotations)
-
-10. Make it real (lights)
+10. Make it real (rotations & lights)
 
