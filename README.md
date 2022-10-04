@@ -19,8 +19,8 @@ assets |
 css |
 ↳ | style.css
 scripts |
-↳ | three.js
 ↳ | script.js
+↳ | three.js
 
 
 - "_index.html_" links to the "_style.css_", "_three.js_" and "_script.js_"
@@ -74,7 +74,7 @@ animate();
 
 ### 7. Make it real (rotation)
 
-- minus the z `sphere` rotation to 0.4 once.
+- increment the z `sphere` rotation to 0.4 once.
 - make the `sphere` rotate on the y axis constantly.
 
 ## To go further
@@ -84,4 +84,3 @@ animate();
 9. Add other planets
 
 10. Make it real (rotations & lights)
-
