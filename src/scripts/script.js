@@ -21,6 +21,11 @@ const material = new THREE.MeshPhongMaterial({ map: textureEarth });
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
 
+// ADD LIGHTS
+const light = new THREE.PointLight(0xffffff, 1.5);
+light.position.set(1, 2, 3);
+scene.add(light);
+scene.add(new THREE.AmbientLight(0xafafaf, 0.15));
 
 // Function Animate
 function animate() {
