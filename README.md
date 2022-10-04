@@ -4,11 +4,12 @@
 
 Recreate Earth in space.
 
-> \#texture \#geometry \#scene \#camera \#render \#light
+> \#threejs \#3D \#scene \#camera \#render \#light \#geometry \#texture \#mesh
 
 ## Steps
 
-### 1. Create a "_src_" folder with the following structure :
+### 1. Create a "*_src_*" folder with the following structure :
+
 Level 1 | Level 2
 ---|---
 index.html |
@@ -21,23 +22,23 @@ scripts |
 ↳ | three.js
 ↳ | script.js
 
-- "_index.html_" with a link to the 3 others
-- "_style.css_" to set the body margin to 0
+
+- "_index.html_" links to the "_style.css_", "_three.js_" and "_script.js_"
+- "_style.css_" sets the body margin to 0
 - "_three.js_" follow this [link](https://threejs.org) and download the code of three.js in our file
 - "_script.js_" this file will contain all the needed code to draw in 3D
 
-> Work only in the "_script.js_" file.
+> **Work only in the "_script.js_" file.**
 
 ### 2. Create the Scene
 
 - create 2 variables (`wpWidth` and `wpHeight`) which respectively reference the width and the height of the visible screen.
-- create a `scene` variable with a space background. You can use free images providers like "Pexels" for example.
+- create a `scene` variable with a space background. You can use free images providers like "Pexels" for example. Save your file in the "_*assets*_" folder.
 
 ### 3. Create the Camera
 
 - create a `camera` variable which represents a three.js perspective camera, with a field of view of 45, an aspect ratio of the entire screen, a near plane of 1 and a far plane of 1000.
 - set the camera 5 units far in the z-axis.
-- make the camera pointing at (1,1,1).
 
 ### 4. Render - Create an animate Loop
 
@@ -56,8 +57,13 @@ animate();
 
 ### 5. Create our Planet
 
-
-
+- aim to [this site](https://www.solarsystemscope.com/textures/) and download the earth map texture. Add it to the "_*assets*_" folder.
+- create 3 variables : `textureEarth`, `geometry` and `material`.
+- `textureEarth` uses the three.js TextureLoader().
+- create a sphere and assign it to `geometry`. You can give it a radius of 1, 32 vertical and horizontal segments to make it smooth.
+- assign a MeshLambertMaterial to the `material` variable and apply the `textureEarth` on it.
+- now, create a `sphere` variable which refers to a Mesh object and give it `geometry` and `material` as arguments.
+- finally, add the `sphere` to the `scene`.
 
 ### 6. Create Lights
 
