@@ -19,8 +19,8 @@ assets |
 css |
 ↳ | style.css
 scripts |
-↳ | three.js
 ↳ | script.js
+↳ | three.js
 
 
 - "_index.html_" links to the "_style.css_", "_three.js_" and "_script.js_"
