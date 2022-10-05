@@ -1,6 +1,7 @@
 # Workshop-ThreeJS
 > \#threejs \#3D \#scene \#camera \#render \#light \#geometry \#texture \#mesh
 
+
 # Objective - Another Earth
 
 Up early, you now have the power to create a new Earth. But, how exactly do we do that?
@@ -8,7 +9,9 @@ Up early, you now have the power to create a new Earth. But, how exactly do we d
 
 ## Steps
 
+
 ## :file_folder: STEP 1. An organization of dreams
+
 
 Creating a planet is not a job to be taken lightly. We'll need some organization.
 First, let's create a folder to hold our entire project. We'll call it the "***project-earth***".
@@ -35,6 +38,7 @@ js |
 
 
 ## :pencil2: STEP 2. Dusty men
+
 
 As "*index.html*" will be the main entry point in our site, we need to make him able to reach all the other files.
 To do so, add the following code in it:
@@ -64,10 +68,12 @@ After it, copy/paste the code in our "*three.js*" file.
 
 After all this hard work, we are ready now to build our world in the "*script.js*" file, but in the next step.
 
+
 ### :trophy: STEP 2 DONE :white_check_mark::white_check_mark::eight_pointed_black_star::eight_pointed_black_star::eight_pointed_black_star: :trophy:
 
 
-## STEP 3. Interstellar
+## :milky_way: STEP 3. Interstellar
+
 
 As we're in space, let's think in 3D.
 A bit of theory:
@@ -147,10 +153,13 @@ scene.background = new THREE.TextureLoader().load("./assets/background_space.jpg
 A bit more shinier right?
 
 Congrats,
+
+
 ### :trophy: STEP 3 DONE :white_check_mark::white_check_mark::white_check_mark::eight_pointed_black_star::eight_pointed_black_star: :trophy:
 
 
-## STEP 4. The day the Earth stood still
+## :earth_africa: STEP 4. The day the Earth stood still
+
 
 We're finally ready to add our planet. In fact, it's just a sphere with a texture. To build something in 3D, you need a "geometry" (here, a sphere) and a "material" (here, another .jpg image from [this site](https://www.solarsystemscope.com/textures/)).
 
@@ -179,10 +188,12 @@ scene.add(new THREE.AmbientLight(0xafafaf, 0.15));
 
 First, we add a white light point, set its position and add it to the scene. Then, for a smoother ambiance, we add an ambient light directly added to the scene.
 
+
 ### :trophy: STEP 4 DONE :white_check_mark::white_check_mark::white_check_mark::white_check_mark::eight_pointed_black_star: :trophy:
 
 
-## STEP 5. After Earth
+## :globe_with_meridians: STEP 5. After Earth
+
 
 To make our Earth more realistic, and as it is a bit tilted on its axis, rotate this:
 
@@ -202,12 +213,14 @@ sphere.rotation.y -= 0.005;
 
 Well done, we have used our new power pretty well. Let's take a nap in front of our new world.
 
-### :trophy: STEP 5 DONE :white_check_mark::white_check_mark::white_check_mark::white_check_mark::white_check_mark::white_check_mark: :trophy:
+
+### :trophy: STEP 5 DONE :white_check_mark::white_check_mark::white_check_mark::white_check_mark::white_check_mark: :trophy:
 
 
 ## To go further
 
-- Add Sun
-- Add other planets
-- Make it even more real (rotations & lights)
+
+- :sun_with_face: Add Sun
+- :new_moon: Add other planets
+- :zap: Make it even more real (rotations & lights)
 
