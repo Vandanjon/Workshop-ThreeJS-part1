@@ -1,27 +1,43 @@
 # Workshop-ThreeJS
-
-## Objective
-
-Recreate Earth in space.
-
 > \#threejs \#3D \#scene \#camera \#render \#light \#geometry \#texture \#mesh
+
+## Objective - Another Earth
+
+Up early, you now have the power to create a new Earth. But, how exactly do we do that?
+
 
 ## Steps
 
-### 1. Create a "*_src_*" folder with the following structure :
+### :file_folder: 1. An organization of dreams
 
-Level 1 | Level 2
+Creating a planet is not a job to be taken lightly. We'll need some organization.
+First, let's create a folder to hold our entire project. We'll call it the "***project-earth***".
+We may be a god, but we're not necessarily subtle.
+We will need:
+- a file that will serve as an entry point for the browser. Call it "*index.html*".
+- a folder that will contain the images of our little universe. Let's call it "***assets***".
+- a "***scripts***" folder for our two js files. The first one, three.js, will contain the code of three.js (subtlety when you hold us). The second one is our code to generate our universe.
+
+Here is a little diagram that summarizes it all:
+
+Create a "*_src_*" folder with the following structure :
+
+top level | sub-level
 ---|---
-index.html |
+| index.html
 assets |
-↳ | background_space.jpg
-↳ | texture_earth.jpg
+↳ (contains) | background_space.jpg
+↳ (contains) | texture_earth.jpg
 css |
-↳ | style.css
+↳ (contains) | style.css
 scripts |
-↳ | script.js
-↳ | three.js
+↳ (contains) | script.js
+↳ (contains) | three.js
 
+
+### :trophy: STEP 1 DONE. Good Job :trophy:
+
+### :file_folder: 2. An organization of dreams
 
 - "_index.html_" links to the "_style.css_", "_three.js_" and "_script.js_"
 - "_style.css_" sets the body margin to 0
