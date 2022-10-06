@@ -228,3 +228,9 @@ Well done, we have used our new power pretty well. Let's take a nap in front of 
 - :new_moon: Add other planets
 - :zap: Make it even more real (rotations & lights)
 
+
+#### Special Thanks to :
+
+- [Anthony Gorski](https://github.com/GorskiAnthony)
+- [Julien Vigneron](https://github.com/gnos28)
+- [Julien Abbadie](https://github.com/JIdayyy)
