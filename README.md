@@ -23,6 +23,7 @@ We will need:
 
 Here is a little diagram that summarizes it all:
 
+
 top level | sub-level
 ---|---
 | index.html
@@ -44,8 +45,8 @@ As "*index.html*" will be the main entry point in our site, we need to make him 
 To do so, add the following code in it:
 
 
->_```index.html```_
-```
+>```index.html```
+```html
 <!DOCTYPE html>
 <html>
 	<head>
@@ -63,8 +64,11 @@ To do so, add the following code in it:
 
 Okay, our command center is operational.
 Now we need to find tools to build our universe. Oh, sure, we could do everything by hand, but God forbid, we also like it easier.
-So we'll ask three.js to help us. To do so, we'll go to [their site](https://threejs.org) and then, in the code section on the left of the main page, we'll click on the download link.
+So we'll ask three.js to help us.
+To do so, 2 options :
+- Or you go to [their site](https://threejs.org) and then, in the code section on the left of the main page, we'll click on the download link.
 After it, copy/paste the code in our "*three.js*" file.
+- Or, you download directly the zipped file here : [link](https://github.com/mrdoob/three.js/archive/master.zip).
 
 After all this hard work, we are ready now to build our world in the "*script.js*" file, but in the next step.
 
@@ -90,7 +94,7 @@ First of all, let's create the scene:
 
 
 >_```script.js```_
-```
+```js
 const scene = new THREE.Scene();
 ```
 
@@ -98,7 +102,7 @@ Now the camera:
 
 
 >_```script.js```_
-```
+```js
 const wpWidth = window.innerWidth;
 const wpHeight = window.innerHeight;
 
@@ -115,7 +119,7 @@ It is really important that, each time we create anything, we add it to the scen
 
 
 >_```script.js```_
-```
+```js
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(wpWidth, wpHeight);
 document.body.appendChild(renderer.domElement);
@@ -128,7 +132,7 @@ Now, we almost have all needed stuff to have a visual. But to render effectively
 
 
 >_```script.js```_
-```
+```js
 function animate() {
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
@@ -147,7 +151,7 @@ First, download a background map to decorate our space system. We chose to pick 
 
 
 >_```script.js```_
-```
+```js
 scene.background = new THREE.TextureLoader().load("./assets/background_space.jpg");
 ```
 A bit more shinier right?
@@ -165,7 +169,7 @@ We're finally ready to add our planet. In fact, it's just a sphere with a textur
 
 
 >_```script.js```_
-```
+```js
 const textureEarth = new THREE.TextureLoader().load("./assets/texture_earth.jpg");
 const geometry = new THREE.SphereGeometry(1, 32, 32);
 const material = new THREE.MeshLambertMaterial({ map: textureEarth });
@@ -179,7 +183,7 @@ In fact, we build a real Earth Doppelganger, but we can't see it because we're i
 
 
 >_```script.js```_
-```
+```js
 const light = new THREE.PointLight(0xffffff, 1.5);
 light.position.set(1, 2, 3);
 scene.add(light);
@@ -199,7 +203,7 @@ To make our Earth more realistic, and as it is a bit tilted on its axis, rotate 
 
 
 >_```script.js```_
-```
+```js
 sphere.rotation.z -= 0.3;
 ```
 
@@ -207,7 +211,7 @@ We can even add a real rotation in our ```animate``` loop. Add this line in the 
 
 
 >_```script.js```_
-```
+```js
 sphere.rotation.y -= 0.005;
 ```
 
