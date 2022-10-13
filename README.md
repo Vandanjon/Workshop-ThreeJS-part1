@@ -1,4 +1,4 @@
-# Workshop-ThreeJS
+# Workshop-ThreeJS - Part 1
 > \#js \#vanilla \#threejs \#3D \#scene \#camera \#render \#light \#geometry \#texture \#mesh
 
 
