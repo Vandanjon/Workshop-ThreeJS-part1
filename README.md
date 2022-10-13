@@ -1,5 +1,5 @@
 # Workshop-ThreeJS
-> \#threejs \#3D \#scene \#camera \#render \#light \#geometry \#texture \#mesh
+> \#js \#vanilla \#threejs \#3D \#scene \#camera \#render \#light \#geometry \#texture \#mesh
 
 
 # Objective - Another Earth
